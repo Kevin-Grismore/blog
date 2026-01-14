@@ -3,12 +3,12 @@ import { FaLinkedin } from "react-icons/fa6";
 
 export default function Footer() {
     return (
-        <div className="fixed flex w-full gap-5 bottom-0 left-0 right-0 z-50 margin-auto px-4 justify-center"
+        <div className="relative flex w-full gap-3 sm:gap-5 z-50 px-4 py-8 justify-center"
         style={{
             backdropFilter: 'blur(8px)'
         }}
         >
-            <div className="fixed top-0" style={{
+            <div className="absolute top-0 left-1/2 -translate-x-1/2" style={{
                 backgroundImage: 'linear-gradient(90deg, transparent, var(--color-primary), transparent)',
                 height: '1px',
                 maxWidth: '600px',
@@ -16,13 +16,13 @@ export default function Footer() {
             }}>
                 
             </div>
-            <a className='pa-4' target="_blank" href="https://github.com/kevingrismore" rel="noopener noreferrer">
-                <SiGithub size="30"/>
+            <a className='p-3 sm:p-4' target="_blank" href="https://github.com/kevingrismore" rel="noopener noreferrer">
+                <SiGithub size="24" className="sm:w-[30px] sm:h-[30px]"/>
             </a>
-            <a className='pa-4' target="blank" href="https://linkedin.com/in/kevingrismore/" rel="nooopener noreferrer">
-                <FaLinkedin size="30" />
+            <a className='p-3 sm:p-4' target="_blank" href="https://linkedin.com/in/kevingrismore/" rel="noopener noreferrer">
+                <FaLinkedin size="24" className="sm:w-[30px] sm:h-[30px]" />
             </a>
-            <div className="p-5 whitespace-nowrap">Made in 2026 with my brain.</div>
+            <div className="p-3 sm:p-5 whitespace-nowrap text-sm sm:text-base">Made in 2026 with my brain.</div>
         </div>
     )
 }
