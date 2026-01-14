@@ -20,12 +20,14 @@ export default async function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning className={`${karla.variable} ${spectral.variable}`}>
-      <body>
-        <Layout>
-          <Navbar pageMap={pageMap}/>
-          {children}
-          <Footer/>
-        </Layout>
+      <body className="flex flex-col min-h-screen">
+        <div className="flex-1 flex flex-col">
+          <Layout>
+            <Navbar pageMap={pageMap}/>
+            {children}
+          </Layout>
+        </div>
+        <Footer/>
       </body>
     </html>
   )

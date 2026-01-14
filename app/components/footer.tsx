@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa6";
 
 export default function Footer() {
     return (
-        <div className="mt-auto flex w-full gap-3 sm:gap-5 z-50 px-4 py-8 justify-center"
+        <div className="mt-auto flex w-full gap-3 sm:gap-3 z-50 px-4 py-4 justify-center"
         style={{
             backdropFilter: 'blur(8px)'
         }}
@@ -22,7 +22,7 @@ export default function Footer() {
             <a className='p-3 sm:p-4' target="_blank" href="https://linkedin.com/in/kevingrismore/" rel="noopener noreferrer">
                 <FaLinkedin size="24" className="sm:w-[30px] sm:h-[30px]" />
             </a>
-            <div className="p-3 sm:p-5 whitespace-nowrap text-sm sm:text-base">Made in 2026 with my brain.</div>
+            <div className="p-3 sm:p-5 whitespace-nowrap text-sm sm:text-base">Made in 2026</div>
         </div>
     )
 }
