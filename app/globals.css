@@ -94,6 +94,8 @@
 }
 
 body {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
   color: var(--color-primary);
   background-color: var(--color-background);
   transition:
