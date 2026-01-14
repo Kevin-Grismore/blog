@@ -16,13 +16,13 @@ export default function Footer() {
             }}>
                 
             </div>
-            <a className='p-4' target="_blank" href="https://github.com/kevingrismore" rel="noopener noreferrer">
+            <a className='pa-4 pb-4 pr-2 pl-2' target="_blank" href="https://github.com/kevingrismore" rel="noopener noreferrer">
                 <SiGithub size="30"/>
             </a>
-            <a className='p-4' target="blank" href="https://linkedin.com/in/kevingrismore/" rel="nooopener noreferrer">
+            <a className='pa-4 pb-4 pr-2 pl-2' target="blank" href="https://linkedin.com/in/kevingrismore/" rel="nooopener noreferrer">
                 <FaLinkedin size="30" />
             </a>
-            <div className="p-5 whitespace-nowrap">Made in 2026 with my brain.</div>
+            <div className="pa-5 pb-5 pr-2 pl-2 whitespace-nowrap">Made in 2026 with my brain.</div>
         </div>
     )
 }
