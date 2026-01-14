@@ -7,13 +7,13 @@ export default async function Blogposts() {
   const posts = await getPosts()
  
   return (
-    <div data-pagefind-ignore="all" className="gap-5 px-4" style={{
+    <div data-pagefind-ignore="all" className="gap-5 px-4 w-full" style={{
       maxWidth: '800px',
       justifySelf: 'center',
       justifyContent: 'center',
     }}>
         {posts.map(post => (
-          <div key={post.name} className="blogpostcard overflow-hidden">
+          <div key={post.name} className="blogpostcard overflow-hidden max-w-full">
             <Link href={post.route}>
             <div className="w-full aspect-video relative overflow-hidden">
               <Image 
