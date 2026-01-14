@@ -104,11 +104,16 @@ body {
 }
 
 .navbar {
-  @apply fixed top-4 left-0 right-0 z-50 mx-auto max-w-2xl px-4;
+  @apply fixed top-4 left-0 right-0 z-50 px-4;
+  /* Remove mx-auto and max-w-2xl from here */
+  display: flex;
+  justify-content: center;
 }
 
 .navbarbackdrop {
-  @apply p-2 relative justify-self-center w-max backdrop-blur-md bg-black/20 rounded-xl shadow-lg;
+  @apply p-2 relative backdrop-blur-md bg-black/20 rounded-xl shadow-lg;
+  /* w-max is fine, but make it explicit */
+  width: max-content;
   border: solid 1px;
   border-color: var(--color-nav-border);
 }
