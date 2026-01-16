@@ -15,8 +15,7 @@ export const Navbar: FC<{ pageMap: PageMapItem[] }> = ({ pageMap }) => {
   })
 
   const tabs: { [key: string]: any } = {
-    blog: 1,
-    about: 2
+    about: 1
   };
 
   const pathStart = pathname.split('/')[1]
